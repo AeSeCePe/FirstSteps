@@ -74,6 +74,11 @@ p{
 .picture-TopRight{
     margin-right: 0;
 }
+.titulo-text{
+    left:50px;
+    
+}
+
 @media (max-width:700px) {
     body{
         margin-top: 100px;
