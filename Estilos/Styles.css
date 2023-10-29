@@ -1,7 +1,7 @@
 .header{
     margin: 0;
    display:flex;
-   height: 70px;
+   min-height: 70px;
    background-color:#f0f4f8;
    justify-content: space-between;
    align-items: center;
@@ -36,6 +36,7 @@ body{
     font-size: 20px;
     line-height: 30px;
     margin: 0;
+    background-image:image-set("Imagenes/background.png");
 }
 h1{
     line-height: 80px;
@@ -51,6 +52,10 @@ p{
     margin-top: 10px;
     margin-right: 10px;
     margin: 0 auto;
+    flex-wrap: wrap;
+}
+.menu-icon{
+    display:none;
 }
 .main{
     margin: 0 auto;
@@ -59,4 +64,29 @@ p{
     align-items: center;
     width: 85%;
     max-width: 850px;
+}
+@media (max-width:700px) {
+    .menu-icon{
+        display:block;
+        padding: 5px;
+        cursor:pointer;
+    }
+    header{
+        flex-direction: column;
+    }
+    .nav{
+        width: 100%;
+        padding:10px 0px;
+        margin-top: 10px;
+    }
+    .nav a{
+        display:none;
+        display: block;
+        padding: 15px;
+        transition: all 0.2s linear;
+        border-radius: 5px;
+    }
+    .nav a.show{
+        display:block;
+    }
 }
