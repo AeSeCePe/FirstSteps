@@ -23,6 +23,7 @@
 .header a:hover{
     background-color: #AEE0E0;
     color:#ffff;
+    border-radius: 50px;
 }
 .header img{
     height: 75px;
@@ -31,16 +32,21 @@
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url(../Imagenes/background.png);
+    position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Verdana, sans-serif;
     color: #333;
     font-size: 20px;
     line-height: 30px;
     margin: 0;
-    background-image:image-set("Imagenes/background.png");
 }
 h1{
     line-height: 80px;
-    font-size: 95px;
+    font-size: 70px;
+    color:#AEE0E0;
 }
 p{
     margin-bottom: 10px;
@@ -65,7 +71,14 @@ p{
     width: 85%;
     max-width: 850px;
 }
+.picture-TopRight{
+    margin-right: 0;
+}
 @media (max-width:700px) {
+    body{
+        margin-top: 100px;
+        padding: 15px;
+    }
     .menu-icon{
         display:block;
         padding: 5px;
@@ -84,7 +97,6 @@ p{
         display: block;
         padding: 15px;
         transition: all 0.2s linear;
-        border-radius: 5px;
     }
     .nav a.show{
         display:block;
