@@ -1,0 +1,74 @@
+/* Establecer un fondo de imagen */
+body{
+    background-image:url(../Imagenes/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+}
+
+.titulo_crianza {
+    color: #95C1C1;
+}
+.titulo_charlar {
+    color: #95C1C1;
+}
+.titulo_cuidados {
+    color: #95C1C1;
+}
+.section {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border: 3px solid #95C1C1;
+    border-radius: 5px;
+}
+
+.section img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: #F5D685;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#main-title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #95C1C1;
+    font-family: Verdana, sans-serif;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #95C1C1;
+}
+
+.search-container button {
+    background-color: #F5D685;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
