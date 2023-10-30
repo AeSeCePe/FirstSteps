@@ -3,9 +3,11 @@
     <link class= "logo" rel = "icon" href="Imagenes/logo.ico">
     <title>First Steps</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Maven+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500&family=Maven+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href ="Estilos/Styles.css">
     <link rel="stylesheet" href="Estilos/Styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -25,7 +27,7 @@
             </nav>
         </div>
     </header>
-    <div class="home">
+    <div class="home" id="home">
         <main class="main">
             <div class="container">
                 <div class="content-data">
@@ -47,14 +49,14 @@
             </div>
         </main>
     </div>
-    <div class="services">
+    <div class="services"id="services">
         <h2 class="services-title">
             Servicios
         </h2>
         <div class="services-carousel-container">
             <div class="carousel-track">
                 <div class="carousel-slide">
-                    <img src="Imagenes/seguimiento.png" alt="seguimiento" id="services-img"><br>
+                    <img src="Imagenes/seguimiento.png" alt="seguimiento" class="services-img">
                     <div class="service-title">
                         Seguimiento
                     </div>
@@ -65,7 +67,7 @@
                     </p>
                 </div>
                 <div class="carousel-slide">
-                    <img src="Imagenes/productos.png" alt="productos" id="services-img"><br>
+                    <img src="Imagenes/productos.png" alt="productos" class="services-img">
                     <div class="service-title">
                         Productos
                     </div>
@@ -76,7 +78,7 @@
                     </p>
                 </div>
                 <div class="carousel-slide">
-                    <img src="Imagenes/comunidades.png" alt="comunidad" id="services-img"><br>
+                    <img src="Imagenes/comunidades.png" alt="comunidad" class="services-img">
                     <div class="service-title">
                         Comunidad
                     </div>
@@ -92,11 +94,96 @@
         <div class="flecha-izquierda"></div>
         <button id="prevBtn"><img src="Imagenes/flecha-izquierda.png" alt="Anterior"></button>
         <button id="nextBtn"><img src="Imagenes/flecha-derecha.png" alt="Siguiente"></button>
-        <script src="Scripts/scripts.js"></script>
     </div>
-    
+    <div class="nosotros"id="nosotros"> 
+        
+        <nav>
+            <div class="logo">Nosotros</div>
+        </nav>
+        <div class="banner">
+            <img src="/Imagenes/nosotros1.png" alt="Comunidad de padres">
+            <p>Somos un espacio online que no solo conecta a padres primerizos,</p>
+            <p>sino que también brindamos información, recomendaciones y tips validados por profesionales.</p>
+        </div>
+        <section id="intro">
+            <img src="/Imagenes/nosotrosBebe.png" alt="Bebé durmiendo">
+            <p>Nuestra mision principal es forjar una comunidad solida y confiable donde los padres primerizos puedan conectar,</p>
+            <p>compartir y aprender juntos.</p>
+        </section>
+    </div>
+
+
+    <div class="login">
+        <h2 class="login-title">Log in</h2>
+        
+    </div>
     <div class="signup">
         <h2 class="signup-title">Sign Up</h2>
     </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">           
+                <div class="logo-footer">
+                    <img src="/Imagenes/logo.png" alt="logo"><br>
+                    <h2 class="titulo-logo-footer">First Steps</h2>
+                </div>
+                <div class="footer-row-links">
+                    <div class="footer-links">
+                        <ul>
+                            <li class="footer-title">
+                                Comunidad
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Sobre Nosotros</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li class="footer-title">
+                                Servicios
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Eventos</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Blog</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Podcast</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li class="footer-title">
+                                Síguenos
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Instagram</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Twitter</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Faceboox</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <p class="copyright-footer">
+            ©2022 Firs Steps. All rights reserved
+        </p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="Scripts/scripts.js"></script>
 </body>
 </html>

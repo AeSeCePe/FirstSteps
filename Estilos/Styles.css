@@ -1,17 +1,17 @@
 .header{
-   z-index:1000;
-   margin: 0;
-   display:flex;
-   min-height: 70px;
-   background-color:#f0f4f8;
-   justify-content: space-between;
-   align-items: center;
-   padding: 20px 0;
-
-   position: fixed;
-   left: 0;
-   top: 0;
-   right: 0;
+    z-index:1000;
+    margin: 0;
+    display:flex;
+    min-height: 70px;
+    background-color:#f0f4f8;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+ 
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 .header .container{
     display:flex;
@@ -146,33 +146,175 @@ body{
         display:block;
     }
 }
+/*Servicios*/
+.services-title{
+    position: absolute;  
+    font-size: 80 ;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.services{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.services-carousel-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 90%;
+}
+.services-title, .service-title, .description {
+    color: #94C1C1;
+}.carousel-track {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-slide {
+    flex: 0 0 30%;
+    padding: 20px;
+    margin: 1em;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #95C1C1;
+    background-color: #EEF0FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.services-img {
+    max-height: 200px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 24px;
+}
+.description{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 300;
+}
+#prevBtn, #nextBtn{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+#prevBtn{
+    position: absolute;
+    top: 60%;
+    left: 40px;
+    transform: translate(-50%, -50%);
+}
+#nextBtn{
+    position: absolute;
+    top: 60%;
+    right: 0px;
+    transform: translate(-8%, -50%);
+}
+
+/*Nosotros*/
 .nosotros nav {
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
     align-items: center;
     font-size: 2em;
-    margin-bottom: 50px; /* Ajusta este valor según el espacio que quieras entre "Nosotros" y la imagen */
+    margin-bottom: 50px; 
 }
 
 .nosotros .menu {
-    margin-right: 10px; /* Ajusta este valor según el espacio que quieras entre el menú y el título */
+    margin-right: 10px; 
 }
 
 .nosotros {
     text-align: center;
     color: #AEE0E0;
-    font-size: 1.0em; /* Ajusta este valor según lo grande que quieras que sean las letras */
+    font-size: 1.0em; 
 }
 
 .nosotros .logo {
-    font-size: 1.0em; /* Ajusta este valor según lo grande que quieras que sea el título */
+    font-size: 1.0em; 
 }
 
 .nosotros .banner img, .nosotros #intro img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%; /* Ajusta este valor según lo grande que quieras que sean las imágenes */
-    height: auto; /* Esto mantiene la relación de aspecto de las imágenes */
+    width: 25%; 
+    height: auto; 
 }
 
+/*Footer*/
+ul, li {
+    list-style: none;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+.footer-item a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.footer-item a:hover {
+    color: #0000006b;
+}
+.footer {
+    background-color: #AEE0E0;
+    color: #FFFFFF;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-links{
+    height: 300px;
+    width: 25%;
+    padding: 25px 15px;
+}
+.footer-title{
+    font-size: 30px;
+    color: #FFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    display: inline-block;
+}
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-footer img {
+    height: 80px;
+}
+
+.logo-footer h2 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+.copyright-footer{
+    margin: 0;
+    padding: 10px;
+}
+.footer-row-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
