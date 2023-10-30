@@ -98,21 +98,26 @@ body{
     top:500px;
     left:300px;
 }
-.buttonPrimerizos,.buttonExperto{
-    position:absolute;
-    top:500px;
-    left:830px;
-    background-color: #AEE0E0;
-    color:white;
-}
-.buttonExperto{
-    left:990px;
-}
-.picture-TopRight,
-.picture-BotLeft {
+.picture-TopRight,.picture-BotLeft {
   width: 400px;
   height: 400px;
 }
+.buttonPrimerizos a, .buttonExperto a{
+    text-decoration: none;
+    display:block;
+    position:absolute;
+    top:500px;
+    left:780px;
+    color:white;
+    background-color: #AEE0E0;
+    background-size: 100px;
+    border-radius: 50px;
+    padding: 15px 20px;
+}
+.buttonExperto a{
+    left:990px;
+}
+
 @media (max-width:700px) {
     body{
         margin-top: 100px;
