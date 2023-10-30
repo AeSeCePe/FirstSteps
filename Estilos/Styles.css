@@ -1,6 +1,6 @@
 .header{
-    z-index:1000;
-    margin: 0;
+   z-index:1000;
+   margin: 0;
    display:flex;
    min-height: 70px;
    background-color:#f0f4f8;
@@ -62,7 +62,7 @@ body{
 .content data{
     position:relative;
 }
-.titulo-home{
+.home{
     line-height: 80px;
     font-size: 70px;
     color:#95C1C1;
