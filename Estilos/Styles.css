@@ -55,6 +55,10 @@ body{
     line-height: 30px;
     margin: 0;
 }
+.total-home{
+    position:relative;
+    height: 130vh;
+}
 .content data{
     position:relative;
 }
