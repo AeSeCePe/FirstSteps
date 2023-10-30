@@ -137,3 +137,33 @@ body{
         display:block;
     }
 }
+.nosotros nav {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 50px; /* Ajusta este valor según el espacio que quieras entre "Nosotros" y la imagen */
+}
+
+.nosotros .menu {
+    margin-right: 10px; /* Ajusta este valor según el espacio que quieras entre el menú y el título */
+}
+
+.nosotros {
+    text-align: center;
+    color: #AEE0E0;
+    font-size: 1.0em; /* Ajusta este valor según lo grande que quieras que sean las letras */
+}
+
+.nosotros .logo {
+    font-size: 1.0em; /* Ajusta este valor según lo grande que quieras que sea el título */
+}
+
+.nosotros .banner img, .nosotros #intro img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%; /* Ajusta este valor según lo grande que quieras que sean las imágenes */
+    height: auto; /* Esto mantiene la relación de aspecto de las imágenes */
+}
+

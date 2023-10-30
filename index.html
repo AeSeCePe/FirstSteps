@@ -3,8 +3,11 @@
     <link class= "logo" rel = "icon" href="Imagenes/logo.ico">
     <title>First Steps</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Maven+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href ="Estilos/Styles.css">
+    <link rel="stylesheet" href="Estilos/Styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -14,41 +17,64 @@
             <img src="Imagenes/logo.png">
             <nav class="navigation">
                 <span class="menu-icon">Ver Menú</span>
-                <a href="#inicio" class="nav-link">Inicio</a>
-                <a href="#servicios" class="nav-link">Servicios</a>
-                <a href="#nosotros" class="nav-link">Nosotros</a>
-                <a href="#contactanos" class="nav-link">Contáctanos</a>
-                <a href="#login" class="nav-link">Log in</a>
-                <a href="#signup" class="nav-link">Sign Up</a>
+                <a href="#" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Servicios</a>
+                <a href="#" class="nav-link">Nosotros</a>
+                <a href="#" class="nav-link">Contáctanos</a>
+                <a href="#" class="nav-link">Log in</a>
+                <a href="#" class="nav-link">Sign Up</a>
             </nav>
         </div>
     </header>
+    <h1>First Steps</h1>
+    <p>Guiando tu camino en la maravillosa aventura de ser padres.</p>
 
-    <main class="main">
-    <div class="container">
-        <div class="content-data">
-                <h1 class="titulo-home">First Steps</h1>
-                <p  class="text1"> Guiando tu camino en la <br>maravillosa aventura de ser <br>padres </p>
+    <div class="services">
+        <h2 class="services-title">
+            Servicios
+        </h2>
+        <div class="services-carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="Imagenes/seguimiento.png" alt="seguimiento" id="services-img"><br>
+                    <div class="service-title">
+                        Seguimiento
+                    </div>
+                    <p class="description">
+                        Rastrea el crecimiento de tu bebé.
+                        Recibe recomendaciones e informacion
+                        de acuerdo al crecimiento del infante
+                    </p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="Imagenes/productos.png" alt="productos" id="services-img"><br>
+                    <div class="service-title">
+                        Productos
+                    </div>
+                    <p class="description">
+                        Encuentra los mejores productos
+                        para tu bebé cerca de ti. Escoge
+                        entre los mejores precios
+                    </p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="Imagenes/comunidades.png" alt="comunidad" id="services-img"><br>
+                    <div class="service-title">
+                        Comunidad
+                    </div>
+                    <p class="description">
+                        Comunícate con otros padres,
+                        comparte experiencias, resuelve dudas,
+                        encuentra chats mediante filtros
+                        de tu preferencia
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="picture-TopRight">
-            <a><img class= "bebehome1" src="Imagenes/BebeHome1.png"></a>
-        </div>
-        <div class="picture-BotLeft">
-            <a><img src="Imagenes/BebeHome2.png"></a>
-        </div>
-        <div class="buttonPrimerizos">
-            <button>Padre primerizo</button>
-        </div>
-        <div class="buttonExperto">
-            <button>Padre Experto</button>
-        </div>
+        <div class="flecha-izquierda"></div>
+        <button id="prevBtn"><img src="Imagenes/flecha-izquierda.png" alt="Anterior"></button>
+        <button id="nextBtn"><img src="Imagenes/flecha-derecha.png" alt="Siguiente"></button>
+        <script src="Scripts/scripts.js"></script>
     </div>
-    </main>
-    
-    <footer class="footer">
-        <!- Parte adriano ->
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="Scripts/scripts.js"></script>
 </body>
 </html>
