@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,38 +14,35 @@
             <img src="Imagenes/logo.png">
             <nav class="navigation">
                 <span class="menu-icon">Ver Menú</span>
-                <a href="#home" class="nav-link">Inicio</a>
+                <a href="index.html" class="nav-link">Inicio</a>
                 <a href="#services" class="nav-link">Servicios</a>
                 <a href="#nosotros" class="nav-link">Nosotros</a>
                 <a href="#contactanos" class="nav-link">Contáctanos</a>
-                <a href="#login" class="nav-link">Log in</a>
-                <a href="#signup" class="nav-link">Sign Up</a>
+                <a href="login.html" class="nav-link">Log in</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
             </nav>
         </div>
     </header>
     <div class="login">
-        <h2 class="login-title">Log in</h2>
-        <p class="titulo-crear-cuenta">Crear cuenta</p>
-        <div class="buttonGoogle">
-            <a href="#">Continuar con Google</a>
-        </div>
-        <div class="buttonFacebook">
-            <a href="#">Continuar con Facebook</a>
-        </div>
-        <div class="buttonApple">
-            <a href="#">Continuar con Apple</a>
-        </div>
-        <div class="buttonEmail">
-            <a href="#">Registrarse con Email</a>
-        </div>
-        <div class="buttonEmail">
-            <a href="#">Registrarse con Email</a>
-        </div>
-        <p class="or">or</p>
-        
-        <input type="text" required=""> 
+        <h2 class="login-title">Iniciar Sesion</h2>
     </div>
-
-
-</body>
-</html>
+    <form class="form">
+        <div class="form_container">
+            <div class="form_group">
+                <input type="email" id="name"class="form_input" placeholder=" ">
+                <label for="nombre"class="form_label">Email</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="name"class="form_input" placeholder=" ">
+                <label for="usuario"class="form_label">Usuario</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="password" id="name"class="form_input" placeholder=" ">
+                <label for="contraseña"class="form_label">Constraseña</label>
+                <span class="form_line"></span>
+            </div>
+            <input type="submit" class="form_submit" value="Entrar">
+        </div>
+    </form>
