@@ -251,6 +251,10 @@ body{
     width: 25%; 
     height: auto; 
 }
+.carousel-slide a{
+    color: inherit;
+    text-decoration: none;
+}
 
 /*Footer*/
 ul, li {
