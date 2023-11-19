@@ -32,3 +32,4 @@ prevBtn.addEventListener('click', () => {
     currentIndex = Math.max(currentIndex - 3, 0);
     updateCarousel();
 });
+
