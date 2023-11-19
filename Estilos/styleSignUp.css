@@ -51,8 +51,8 @@
    background-size: cover;
    font-family: Verdana, sans-serif;
    min-height: 100vh;
-    line-height: 30px;
-    margin: 0;
+   line-height: 30px;
+   margin: 0;
  }
  .signup-title{
    font-size: 50px;

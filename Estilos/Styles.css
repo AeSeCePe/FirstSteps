@@ -45,12 +45,12 @@
 
 body{
     background-image:url(../Imagenes/background.png);
+    margin:auto;
     position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
     font-family: Verdana, sans-serif;
-    font-size: 20px;
+    min-height: 100vh;
     line-height: 30px;
     margin: 0;
 }
@@ -147,11 +147,14 @@ body{
 }
 /*Servicios*/
 .services-title{
-    position: absolute;  
+    position: absolute;
     font-size: 80 ;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.services-tittle a{
+    text-decoration: none;
 }
 .services{
     position: relative;

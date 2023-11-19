@@ -1,0 +1,117 @@
+.header{
+    z-index:1000;
+    margin: 0;
+    display:flex;
+    min-height: 70px;
+    background-color:#f0f4f8;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+ 
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+ }
+ .header .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+ }
+ .menu-icon{
+    display:none;
+ }
+ .navigation a{
+    margin: 0;
+    color:#95C1C1;
+    text-decoration: none;
+    padding: 5px;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+ }
+ .header a:hover{
+    background-color: #AEE0E0;
+    color:#ffff;
+    border-radius: 50px;
+ }
+ .header img{
+    height: 75px;
+    margin-top: 10px;
+    margin-right: 10px;
+ }
+ body{
+   background-image:url(../Imagenes/background.png);
+   margin:auto;
+   position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: Verdana, sans-serif;
+   min-height: 100vh;
+   line-height: 30px;
+   margin: 10%;
+ }
+ .izq{
+   width:50%;
+   text-align: left;
+ }
+ .contenedor-comentarios{
+   display:flex;
+   flex-wrap: wrap;
+   width: 100%;
+ }
+ .cajita{
+   width: 500px;
+   box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+   background-color: #f0f4f8;
+   padding:20px;
+   margin:15px;
+   cursor:pointer;
+ }
+ .imagen-perfil{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   overflow:hidden;
+   margin-right: 10px;
+ }
+ .imagen-perfil img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+ }
+ .perfil{
+   display:flex;
+   flex-direction: center;
+ }
+ .nombre-usuario{
+   display:flex;
+   flex-direction:column;
+ }
+ .nombre-usuario strong{
+   color:#95C1C1;
+   font-size: 1,1rem;
+   letter-spacing: 0.5px;
+ }
+ .nombre-usuario span{
+   color:#979797;
+   font-size: 0.8rem;
+ }
+ .reviews{
+   color:#F5D685;
+ }
+ .top-cajita{
+   display:block;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.comentarios-user p{
+   margin-top: 20px;
+   font-size: 0.9rem;
+   color:#4b4b4b;
+}
