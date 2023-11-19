@@ -54,11 +54,28 @@
    line-height: 30px;
    margin: 10%;
  }
+.divpartes{
+   width: 80%;
+   display:flex;
+}
  .izq{
    width:50%;
    text-align: left;
  }
- .contenedor-comentarios{
+.der{
+   width:50%;
+   text-align: left;
+}
+.introduccion h3{
+   color:#95C1C1;
+}
+.introduccion p{
+   color:#4b4b4b;
+}
+.Comentarios h4{
+   color:#95C1C1;
+}
+.contenedor-comentarios{
    display:flex;
    flex-wrap: wrap;
    width: 100%;
