@@ -146,6 +146,19 @@ body{
     }
 }
 /*Servicios*/
+
+/*sombreado*/
+.carousel-slide {
+    border: 3px solid transparent;
+    transition: background-color 0.5s ease, border 1s ease;
+}
+
+.carousel-slide:hover {
+    border: 3px solid #40E0D0;
+    animation: borderPulse 1s infinite;
+    box-shadow: 0 0 10px #40E0D0, 0 0 20px #40E0D0, 0 0 30px #40E0D0, 0 0 40px #40E0D0;
+}
+
 .services-title{
     position: absolute;
     font-size: 80 ;
