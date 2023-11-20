@@ -53,6 +53,7 @@ body{
     min-height: 100vh;
     line-height: 30px;
     margin: 0;
+	color:#4b4b4b;
 }
 
 .divpartes{
@@ -274,7 +275,7 @@ body{
 	position: absolute;
 	left: 0;
 	bottom: -15px;
-	color: #4b4b4b;
+	color: #4b4b4b6c;
 	font-size: 10px;
 }
 
@@ -282,7 +283,7 @@ body{
 	position: absolute;
 	right: 0;
 	bottom: -15px;
-	color:#4b4b4b;
+	color:#4b4b4b5a;
 	font-size: 10px;
 }
 
