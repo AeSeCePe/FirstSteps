@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   
+  </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <p class="titulo1">Preguntas y Respuestas</p>
+    <!--INTRO-->
+    <p class="intro">Bienvenido a nuestra sección de Preguntas Frecuentes (FAQ). Aquí encontrarás respuestas a las consultas más comunes sobre nuestra aplicación FirstSteps, diseñada para ayudar a padres primerizos a conectarse, compartir experiencias y participar en eventos sociales. Explora las preguntas a continuación para obtener más información y maximizar tu experiencia con FirstSteps.</p>
+    <img src="Imagenes/imagen3.png" alt="respuesta" weight="700" height="400">
+
+<div class="faq-container">
+    <p class="text1">A continuacion presentaremos las preguntas mas frecuentas dividas en secciones: </p>
+    <p class="titulo2">Registro Cuenta</p>
+    <!--REGISTRO CUENTA-->
+  <div class="faq-item" onclick="toggleFaq('faq1')">
+    <div class="faq-question">¿Cómo puedo recuperar mi contraseña si la olvido?</div>
+    <div class="faq-answer" id="faq1">
+      <p>En la pantalla de inicio de sesión, hay una opción para "Olvidé mi contraseña". Sigue las instrucciones para restablecer tu contraseña a través del correo electrónico registrado.</p>
+    </div>
+  </div>
+  <div class="faq-item" onclick="toggleFaq('faq2')">
+    <div class="faq-question">¿Es posible cambiar la información de mi perfil después del registro?</div>
+    <div class="faq-answer" id="faq2">
+      <p>Sí, puedes actualizar la información de tu perfil en la sección de configuración de la aplicación.</p>
+    </div>
+  </div>
+    <div class="faq-item" onclick="toggleFaq('faq3')">
+        <div class="faq-question">¿Cómo puedo registrarme en FirstSteps?</div>
+        <div class="faq-answer" id="faq3">
+          <p>Para registrarte en FirstSteps, simplemente descarga la aplicación desde la tienda de aplicaciones, completa el formulario de registro con tu información básica y sigue las instrucciones en pantalla.</p>
+        </div>
+      </div>
+    <!--GRUPO DE DISCUSION-->
+    <p class="titulo2">Grupo de Discusion</p>
+    <div class="faq-item" onclick="toggleFaq('faq4')">
+        <div class="faq-question">¿Cómo encuentro y me uno a grupos de discusión relevantes?</div>
+        <div class="faq-answer" id="faq4">
+          <p>Explora la sección de Grupos en la aplicación, donde encontrarás una lista de grupos. Puedes unirte a un grupo tocando el botón correspondiente.</p>
+        </div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq('faq5')">
+        <div class="faq-question">¿Puedo crear mi propio grupo de discusión?</div>
+        <div class="faq-answer" id="faq5">
+          <p>Sí, puedes crear tu propio grupo desde la sección de Grupos. Proporciona detalles como el nombre del grupo, la descripción y las configuraciones de privacidad.</p>
+        </div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq('faq6')">
+        <div class="faq-question">¿Cómo puedo dejar un grupo al que me he unido?</div>
+        <div class="faq-answer" id="faq6">
+          <p>Ve a la página del grupo y busca la opción para salir o abandonar el grupo.</p>
+        </div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq('faq7')">
+        <div class="faq-question">¿Hay algún límite en la cantidad de grupos a los que puedo unirme?</div>
+        <div class="faq-answer" id="faq7">
+          <p>No, actualmente no hay un límite en la cantidad de grupos a los que puedes unirte.</p>
+        </div>
+    </div>
+    <!--EVENTOS SOCIALES-->
+    <p class="titulo2">Eventos Sociales</p>
+    <div class="faq-item" onclick="toggleFaq('faq8')">
+        <div class="faq-question">¿Cómo puedo programar un evento social?</div>
+        <div class="faq-answer" id="faq8">
+          <p>Desde la sección de Eventos, toca el botón para crear un nuevo evento. Completa la información del evento y configura los detalles.</p>
+        </div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq('faq9')">
+        <div class="faq-question">¿Hay algún límite en la cantidad de eventos que puedo crear?        </div>
+        <div class="faq-answer" id="faq9">
+          <p>No hay límite establecido, pero te recomendamos ser consciente de la calidad y relevancia de los eventos que creas.        </p>
+        </div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq('faq10')">
+        <div class="faq-question">¿Puedo invitar a personas de fuera de la aplicación a un evento?        </div>
+        <div class="faq-answer" id="faq10">
+          <p>Actualmente, las invitaciones están limitadas a usuarios de FirstSteps.        </p>
+        </div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq('faq11')">
+        <div class="faq-question">¿Cómo puedo confirmar mi asistencia a un evento?        </div>
+        <div class="faq-answer" id="faq11">
+          <p>Abre el evento y busca la opción para confirmar tu asistencia.        </p>
+        </div>
+    </div>
+    <div class="question-form">
+        <h3>¿No encontraste lo que buscabas?</h3>
+        <p>Envíanos tu pregunta:</p>
+        <input type="text" class="question-input" placeholder="Escribe tu pregunta aquí">
+        <button class="submit-btn" onclick="submitQuestion()">Enviar</button>
+      </div>
+</div>
+
+<script>
+  function toggleFaq(faqId) {
+    var faqAnswer = document.getElementById(faqId);
+    if (faqAnswer.style.display === "block") {
+      faqAnswer.style.display = "none";
+    } else {
+      faqAnswer.style.display = "block";
+    }
+  }
+  function submitQuestion() {
+      var questionInput = document.querySelector('.question-input');
+      var userQuestion = questionInput.value;
+
+      // Puedes hacer algo con la pregunta del usuario, como mostrarla en la consola
+      console.log("Pregunta del usuario:", userQuestion);
+
+      // Puedes agregar más lógica aquí, como enviar la pregunta a un servidor, etc.
+    }
+</script>
+
+</body>
+</html>
