@@ -53,70 +53,79 @@ body{
     min-height: 100vh;
     line-height: 30px;
     margin: 0;
+	color:#4b4b4b;
 }
 .home{
-    position:relative;
-    height: 130vh;
-}
-.content data{
-    position:relative;
-}
-.titulo-home{
-    line-height: 80px;
-    font-size: 70px;
-    color:#95C1C1;
-    margin-top: 160px;
-}
-.text1{
-    color:#95C1C1;
-    line-height: 35px;
-    font-size: 20px;
-    text-align:center;
-    position:absolute;
-    left: 380px;
-    line-height: 30px;
-    margin-top: 0;
+    margin-top: 10%;
 }
 .main{
-    margin: 0 auto;
-    padding-top:100px;
-    line-height: 9px;
-    align-items: center;
-    width: 85%;
-    max-width: 850px;
+    margin:auto;
+    margin-top: 10%;
+    width: 80%;
+    display:flex;
 }
-.picture-TopRight{
-    margin-right: 0;
-    position:absolute;
-    top:240px;
-    left:800px;
-}
+.container-izq{
+    width:50%;
+    align-items: left;
+ }
+ .container-der{
+   width:50%;
+   text-align: left;
+   align-content: center;
+ }
+ .content-data{
+    display:block;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+ .titulo-home, .text1, .picture-TopRight{
+    color:#95C1C1;
+    text-align: center;
+    padding:0.5rem;
+ }
 .picture-BotLeft{
-    margin-right: 0;
-    position:absolute;
-    top:500px;
-    left:360px;
+    margin-top: 10%;
+    text-align: center;
+    padding:0.5rem;
 }
-.picture-TopRight,.picture-BotLeft {
-  width: 400px;
-  height: 400px;
+.botones{
+    margin-top: 10%;
+    width:70%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 .buttonPrimerizos a, .buttonExperto a{
     text-decoration: none;
     display:block;
     position:absolute;
-    top:500px;
-    left:780px;
     color:white;
-    background-color: #AEE0E0;
+    background-color:#95C1C1;
     background-size: 100px;
-    border-radius: 50px;
+    border-radius: 50rem;
     padding: 15px 20px;
 }
-.buttonExperto a{
-    left:990px;
+.buttonPrimerizos a{
+    right:35%;
 }
-
+.buttonExperto a{
+    right:15%;
+}
+.buttonPrimerizos{
+    align-items: left;
+    width:50%;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.buttonExperto{
+    align-items: left;
+    width:50%;
+    display:flex;
+    flex-wrap: wrap;
+    text-align: right;
+}
 @media (max-width:700px) {
     body{
         margin-top: 100px;
@@ -158,10 +167,12 @@ body{
 }
 .services{
     position: relative;
+    margin-top: 10%;
     height: 100vh;
     width: 100%;
 }
 .services-carousel-container {
+    margin-top: 5%;
     position: absolute;
     top: 60%;
     left: 50%;
