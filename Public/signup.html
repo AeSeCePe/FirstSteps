@@ -1,20 +1,22 @@
 
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link class= "logo" rel = "icon" href="Imagenes/logo.ico">
+    <link class= "logo" rel = "icon" href="../Imagenes/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/styleLogin.css">
-    <title>Log In</title>
+    <link rel="stylesheet" href="../Estilos/styleSignUp.css">
+    <title>Sign Up</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img src="Imagenes/logo.png">
+            <img src="../Imagenes/logo.png">
             <nav class="navigation">
                 <span class="menu-icon">Ver Menú</span>
-                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="../index.html" class="nav-link">Inicio</a>
                 <a href="#services" class="nav-link">Servicios</a>
                 <a href="#nosotros" class="nav-link">Nosotros</a>
                 <a href="#contactanos" class="nav-link">Contáctanos</a>
@@ -23,14 +25,22 @@
             </nav>
         </div>
     </header>
-    <div class="login">
-        <h2 class="login-title">Iniciar Sesion</h2>
-    </div>
+    <h2 class="signup-title">Registrarse</h2>
     <form class="form">
         <div class="form_container">
             <div class="form_group">
                 <input type="email" id="name"class="form_input" placeholder=" ">
                 <label for="nombre"class="form_label">Email</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="name"class="form_input" placeholder=" ">
+                <label for="usuario"class="form_label">Nombres</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id="name"class="form_input" placeholder=" ">
+                <label for="usuario"class="form_label">Apellidos</label>
                 <span class="form_line"></span>
             </div>
             <div class="form_group">
@@ -43,6 +53,13 @@
                 <label for="contraseña"class="form_label">Constraseña</label>
                 <span class="form_line"></span>
             </div>
+            <div class="botones">
+                <a class ="buttonPrimerizos" href="#">Padre Primerizo</a>
+                <a class ="buttonExperto" href="#">Padre Experto</a>
+            </div>
             <input type="submit" class="form_submit" value="Entrar">
         </div>
     </form>
+
+</body>
+</html>
